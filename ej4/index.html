@@ -1,18 +1,25 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Ejercicio 4</title>
-  </head>
-  <body>
-    <input name="name" placeholder="Name" required />
-    <input name="email" placeholder="Email" required />
-    <select name="role">
-      <option>Admin</option>
-      <option>Editor</option>
-      <option>Viewer</option>
-    </select>
-    <button id="add">Add</button>
+<html lang="es">
+<head>
+  <title>Parcial 1, 2025 sem 2, Desarrollo Web y Mobile</title>
+  <script src="ej4.js"></script>
+</head>
+<body>
+  <h1>Mini-Contacts</h1>
 
-    <ul id="users"></ul>
-  </body>
+  <form id="userForm">
+    <input type="text" id="name" placeholder="Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <select id="role" required>
+      <option value="Viewer">Viewer</option>
+      <option value="Editor">Editor</option>
+      <option value="Admin">Admin</option>
+    </select>
+    <button type="submit">Add</button>
+  </form>
+
+  <ul id="users"></ul>
+
+  
+</body>
 </html>

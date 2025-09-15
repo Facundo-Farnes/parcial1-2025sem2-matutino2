@@ -1,27 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parcial 1, 2025 sem 2, Desarrollo Web y Mobile</title>
     <link rel="stylesheet" href="ej01.css">
 </head>
-
 <body>
-    <h1>Ejercicio 01</h1>
-    <p>
-        Replicar la composición de ej_01_referencia.jpg lo más fiel posible,
-        respetando tipografías, tamaños, colores, espaciados y
-        alineaciones de cada sección. En /assets se encuentran las imágenes a usar
-        y en textos.md todo el contenido del menú. La entrega debe resolverse solo con
-        HTML + CSS (sin frameworks/JS).
-    </p>
-    <p>
-        La fuente a utilizar (Rufina Bold) ya ha sido descargada y agregada en
-        /assets/fonts, y se encuentra referenciada en el archivo ej01.css.
-        Solo deben aplicarla donde corresponda.
-    </p>
-</body>
+    <header id="Header">
+        <div class="header-text">
+            <h1>Los Pollos Hermanos</h1>
+            <p>El sabor que hace que hasta Heisenberg se saque el sombrero.</p>
+        </div>
+        <img id="PollosHermanos" src="./assets/los_pollos_hermanos.png">
+    </header>
 
+    <section class="menu-section">
+        <h1>Entradas</h1>
+        <h6>El primer paso a la adicción</h6>
+        <div class="menu-item">
+            <img src="./assets/better_call_saul.png" alt="Better Call Saul">
+            <div class="menu-text">
+                <p>--------------------------------------------------------$20</p>
+                <p class="menu-name">Alitas de Crystal Meth</p>
+                <p class="description">Crujientes y adictivas, servidas con una salsa “azul” de la casa.</p>
+                <p>--------------------------------------------------------$18</p>
+                <p class="menu-name">Nachos Salamanca</p>
+                <p class="description">Se comen rápido, pero cuidado… siempre hay consecuencias.</p>
+                <p>--------------------------------------------------------$12</p>
+                <p class="menu-name">Guacamole Better Call Saul</p>
+                <p class="description">Ideal para empezar la velada con una defensa impecable.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <h1>Platos Principales</h1>
+        <h6>La verdadera cocina de Los Pollos Hermanos</h6>
+        <div class="menu-item">
+            <div class="menu-text">
+                <p>--------------------------------------------------------$20</p>
+                <p class="menu-name">Pollo a la Gus Fring</p>
+                <p class="description">Perfecto, impecable, sin una sola falla.</p>
+                <p>--------------------------------------------------------$22</p>
+                <p class="menu-name">Ribs al estilo Heisenberg</p>
+                <p class="description">Tan intensas que parecen cocinadas en un laboratorio de química.</p>
+                <p>--------------------------------------------------------$20</p>
+                <p class="menu-name">Steak "Say My Name"</p>
+                <p class="description">Jugoso, potente y servido con respeto absoluto.</p>
+            </div>
+            <img src="./assets/walter_white.png">
+        </div>
+    </section>
+
+    <!-- Postres & Bebidas -->
+    <section class="menu-section">
+        <h1>Postres & Bebidas</h1>
+        <h6>Para terminar la jornada como un capo del cartel</h6>
+        <div class="menu-item">
+            <img src="./assets/gustavo_fring.png">
+            <div class="menu-text">
+                <p>--------------------------------------------------------$40</p>
+                <p class="menu-name">Flan del Desierto</p>
+                <p class="description">Suave, dorado y con un caramelo tan dulce que parece cocinado bajo el sol de Albuquerque.</p>
+                <p>--------------------------------------------------------$30</p>
+                <p class="menu-name">Café Lalo Salamanca</p>
+                <p class="description">Fuerte, con un “golpe” inesperado al final.</p>
+                <p>--------------------------------------------------------$90</p>
+                <p class="menu-name">Whisky Pollos Hermanos</p>
+                <p class="description">Tan suave que hasta Mike se tomaría uno después del turno.</p>
+            </div>
+        </div>
+    </section>
+</body>
 </html>
